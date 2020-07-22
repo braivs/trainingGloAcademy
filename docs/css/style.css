@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 .main {
   color: #fff;
   display: flex;
@@ -107,4 +111,105 @@ body {
   height: 50px;
   background-color: #fff;
   box-shadow: 0 0 19px 2px rgba(204, 204, 223, 0.5);
+}
+
+.table {
+  background-color: #f9fafc;
+  padding: 10rem;
+}
+.table .table-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.table .table-header span {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #9fa4af;
+}
+.table .table-header span::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #6e45e2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.table .table-header span::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #6e45e2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.table .table-header h2 {
+  color: #4f4f6f;
+  font-size: 6rem;
+  margin: 0;
+}
+.table .table-header p {
+  font-size: 1.8rem;
+  display: inline-block;
+  width: 40rem;
+  line-height: 1.4;
+  color: #9fa4af;
+}
+.table .price-tags {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.table .price-tags .price-tag {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 35rem;
+  transition: 0.5s;
+}
+.table .price-tags .price-tag:hover {
+  cursor: pointer;
+  box-shadow: 0 0 60px 10px rgba(204, 204, 223, 0.71);
+}
+.table .price-tags .price-tag span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 3rem auto 1rem;
+}
+.table .price-tags .price-tag h4 {
+  font-weight: 500;
+  margin: 0;
+  color: #4f4f6f;
+  font-size: 3.5rem;
+}
+.table .price-tags .price-tag h4 sup {
+  vertical-align: super;
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+}
+.table .price-tags .price-tag h4 sub {
+  font-size: 1.4rem;
+}
+.table .price-tags .price-tag p {
+  color: #9fa4af;
+}
+.table .price-tags .price-tag .price-btn {
+  background-color: #fff;
+  border: #9fa4af 1px solid;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 4rem;
+  border-radius: 100px;
+  transition: 0.2s;
+}
+.table .price-tags .price-tag .price-btn:hover {
+  background-color: #6e45e2;
+  color: #fff;
 }
