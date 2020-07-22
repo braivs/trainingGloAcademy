@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Maven Pro", sans-serif;
   margin: 0;
 }
 
@@ -19,8 +19,7 @@ body {
   background-size: cover;
   position: relative;
 }
-
-.main-overlay {
+.main .main-overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -30,8 +29,7 @@ body {
   z-index: 0;
   background-image: linear-gradient(-60deg, #88d3ce 0%, #6e45e2 100%);
 }
-
-.header {
+.main .header {
   display: flex;
   height: 10vh;
   justify-content: space-between;
@@ -40,23 +38,73 @@ body {
   position: relative;
   z-index: 2;
 }
-
-.menu {
+.main .header .menu {
   width: 70%;
 }
-.menu ul {
+.main .header .menu ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-.menu .menu-link {
+.main .header .menu .menu-link {
   color: #fff;
   text-decoration: none;
 }
-.menu .get-started-btn {
+.main .header .menu .get-started-btn {
   margin-left: 60px;
   border: 1px solid #fff;
   padding: 10px 20px;
   border-radius: 100px;
   text-transform: uppercase;
+}
+.main .main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.main .main-text span {
+  display: inline-block;
+}
+.main .main-text span::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.main .main-text span::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.main .main-text h1 {
+  margin: 0.5rem;
+  font-size: 80px;
+}
+.main .main-arrow {
+  position: relative;
+  z-index: 2;
+  height: 15vh;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.main .main-arrow .arrow-down {
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 19px 2px rgba(204, 204, 223, 0.5);
 }
