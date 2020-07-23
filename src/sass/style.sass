@@ -17,6 +17,20 @@ html
     opacity: 0.39
     z-index: 0
     background-image: linear-gradient(-60deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%)
+ul
+    display: flex
+    justify-content: space-around
+    list-style: none
+    font-size: 1.5rem
+.menu-link
+    color: #fff
+    text-decoration: none
+.get-started-btn
+    margin-left: 60px
+    border: 1px solid #fff
+    padding: 10px 20px
+    border-radius: 100px
+    text-transform: uppercase
 // / ===Common===
 
 .main
@@ -40,20 +54,6 @@ html
         z-index: 2
         .menu
             width: 70%
-            ul
-                display: flex
-                justify-content: space-around
-                list-style: none
-                font-size: 1.5rem
-            .menu-link
-                color: #fff
-                text-decoration: none
-            .get-started-btn
-                margin-left: 60px
-                border: 1px solid #fff
-                padding: 10px 20px
-                border-radius: 100px
-                text-transform: uppercase
     .main-text
         display: flex
         flex-direction: column
@@ -251,7 +251,7 @@ html
                     font-weight: 500
                 .footer-get-started
                     margin-left: 60px
-                    border: 1px solid #fff
+                    border: none
                     background-color: #6e45e2
                     color: #fff
                     padding: 10px 20px
@@ -279,7 +279,37 @@ html
             display: inline-block
             margin-right: 1rem
 
-// .m-menu-link
-//     display: none
-//     color: #fff
-//     font-size: 3rem
+.m-menu-link
+    display: none
+    color: #fff
+    font-size: 3rem
+.m-menu
+    padding: 0
+    margin: 0
+    position: fixed
+    right: 0
+    top: 0
+    height: 100vh
+    width: 100%
+    list-style: none
+    font-size: 3rem
+    line-height: 3
+    background-color: #6e45e2
+    z-index: 999
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    transition: 0.2s
+    transform: translateX(100%)
+    &__active
+        transform: translateX(0%)
+    .close-menu
+        position: fixed
+        right: 5rem
+        font-size: 5rem
+        top: 0
+        font-weight: 900
+        color: #fff
+        &:hover
+            cursor: pointer

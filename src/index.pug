@@ -10,13 +10,27 @@ html(lang="en")
         link(href!="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap", rel="stylesheet")
         title Pricing
     body
+        ul.m-menu
+            li.close-menu &times;
+            li
+                a.menu-link(href="") Home
+            li
+                a.menu-link(href="") Why MISOCIAL
+            li
+                a.menu-link(href="") Features
+            li
+                a.menu-link(href="") Articles
+            li
+                a.menu-link(href="") Pricing
+            li
+                a.get-started-btn.menu-link(href="") get started
         .main
             .main-overlay
             .header
                 .logo
                     img(src="img/logo.png", alt="logo")
-                //- a.m-menu-link(href="")
-                //-     i.fa.fa-bars
+                a.m-menu-link(href="#")
+                    i.fa.fa-bars
                 .menu.visible-lg
                     ul
                         li
@@ -104,7 +118,23 @@ html(lang="en")
                     i.fa.fa-google-plus
                 a(href="#")
                     i.fa.fa-instagram
-    
+
+    script(src="https://code.jquery.com/jquery-1.12.4.min.js")
+    script.
+        $(function() {
+            var link = $('.m-menu-link');
+            var close = $('.close-menu');
+            var menu = $('.m-menu');
+            link.on('click', function(event) {
+                event.preventDefault(); 
+                menu.toggleClass('m-menu__active');
+            });
+            close.on('click', function(event) {
+                event.preventDefault(); 
+                menu.toggleClass('m-menu__active');
+            });
+        })
+
 
 
 
