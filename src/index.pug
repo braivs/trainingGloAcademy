@@ -6,6 +6,7 @@ html(lang="en")
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
         link(rel="stylesheet", href="css/normalize.css")
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/media.css")
         link(href!="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap", rel="stylesheet")
         title Pricing
     body
@@ -14,7 +15,9 @@ html(lang="en")
             .header
                 .logo
                     img(src="img/logo.png", alt="logo")
-                .menu
+                //- a.m-menu-link(href="")
+                //-     i.fa.fa-bars
+                .menu.visible-lg
                     ul
                         li
                             a.menu-link(href="") Home
@@ -31,7 +34,9 @@ html(lang="en")
             .main-text
                 span social marketing & analytics
                 h1 Pricing Table
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi deleniti debitis tenetur distinctio.
+                p 
+                    |Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    |Minima excepturi deleniti debitis tenetur distinctio.
             a.main-arrow(href="")
                 .arrow-down
                     img(src="img/arrow.png", alt="down")
@@ -99,6 +104,8 @@ html(lang="en")
                     i.fa.fa-google-plus
                 a(href="#")
                     i.fa.fa-instagram
+    
+
 
 
 

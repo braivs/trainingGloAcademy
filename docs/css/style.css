@@ -51,6 +51,7 @@ html {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  font-size: 1.5rem;
 }
 .main .header .menu .menu-link {
   color: #fff;
@@ -101,6 +102,10 @@ html {
   margin: 0.5rem;
   font-size: 6rem;
   font-weight: 500;
+}
+.main .main-text p {
+  font-size: 1.5rem;
+  line-height: 3rem;
 }
 .main .main-arrow {
   position: relative;
@@ -206,6 +211,7 @@ html {
 .table .price-tags .price-tag p {
   color: #9fa4af;
   line-height: 1.4;
+  font-size: 1.4rem;
 }
 .table .price-tags .price-tag .price-btn {
   background-color: #fff;
